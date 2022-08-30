@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>SoluCSharp.Demo05.ConfPuebla.Socket</AssemblyName>
+    <RootNamespace>SoluCSharp.Demo05.ConfPuebla.Socket</RootNamespace>
+    <UserSecretsId>4a43d571-c6ec-49ce-bfc6-70231f8aeaea</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SoluCSharp.Demo05.ConfPuebla.Entities\SoluCSharp.Demo05.ConfPuebla.Entities.csproj" />
+  </ItemGroup>
+
+</Project>

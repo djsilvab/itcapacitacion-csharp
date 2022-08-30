@@ -1,0 +1,10 @@
+Instalar:
+Microsoft.EntityFrameworkCore.Sqlite
+Microsoft.EntityFrameworkCore.SqlServer
+Microsoft.EntityFrameworkCore.Tools
+
+PM> Add-Migration InitialCreate
+PM> Remove-Migration
+PM> Update-Database
+
+PM> Install-Package Microsoft.AspNetCore.SignalR.Client -Version 5.0.17

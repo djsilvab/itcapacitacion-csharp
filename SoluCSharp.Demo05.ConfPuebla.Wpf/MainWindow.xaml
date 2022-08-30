@@ -1,0 +1,24 @@
+﻿<Window x:Class="SoluCSharp.Demo05.ConfPuebla.Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SoluCSharp.Demo05.ConfPuebla.Wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Button x:Name="btnGetProducts" Content="Get Products" Margin="5" Padding="5"/>
+            <Button x:Name="btnInsertProduct" Content="Insert Product" Margin="5" Padding="5"/>
+            <Button x:Name="btnUpdateProduct" Content="Update Product" Margin="5" Padding="5"/>
+        </StackPanel>
+        <DataGrid x:Name="dgProducts" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Binding="{Binding Id}"/>
+                <DataGridTextColumn Header="Name" Binding="{Binding Name}"/>
+                <DataGridTextColumn Header="Unit Price" Binding="{Binding UnitPrice}"/>
+                <DataGridTextColumn Header="Units In Stock" Binding="{Binding UnitsIntStock}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </StackPanel>
+</Window>

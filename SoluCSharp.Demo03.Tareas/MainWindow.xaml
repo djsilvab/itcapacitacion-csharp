@@ -1,0 +1,21 @@
+﻿<Window x:Class="SoluCSharp.Demo03.Tareas.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SoluCSharp.Demo03.Tareas"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label x:Name="Messages" Grid.Row="0"></Label>
+        <StackPanel Orientation="Horizontal" Grid.Row="1">
+            <Button x:Name="StartTask" Margin="5" Padding="5" Click="StartTask_Click">Iniciar Tarea</Button>
+            <Button x:Name="CancelTask" Margin="5,5,5,0" Padding="5" Height="28" VerticalAlignment="Top" Click="CancelTask_Click">Cancelar tarea</Button>
+            <Button x:Name="ShowStatus" Margin="5" Padding="5" Click="ShowStatus_Click">Mostrar Estatus</Button>
+        </StackPanel>
+    </Grid>
+</Window>
